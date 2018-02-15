@@ -28,6 +28,9 @@ class ServiceNowData
   end
 
   def duration_in_minutes(data)
+    if data.u_service_interruption == 'No'
+      return 0
+    end
     et = DateTime.parse(data['end_date'])
     st = DateTime.parse(data['start_date'])
     duration = ((et - st) * 24 * 60).to_i
