@@ -1,5 +1,5 @@
 # graphmailer-rb
-Send templated emails using Microsoft's Grpah API
+Send templated emails using Microsoft's Graph API
 
 
 
